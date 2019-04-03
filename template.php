@@ -12,44 +12,7 @@
         die(); // Force execution to stop on errors.
     }
  
-    $reg =false;
-    $change=false;
-    if ($_GET != null)
-    {
-        $verify=filter_input(INPUT_GET,'reg',FILTER_SANITIZE_SPECIAL_CHARS);
-        if ($verify==true) {
-            $reg =true;
-        }
-        else {
-            $reg=false;
-        }
 
-        
-        $getchangePassword= filter_input(INPUT_GET,'changePassword',FILTER_SANITIZE_SPECIAL_CHARS);
-        if ($getchangePassword==true) 
-        {
-            $change=true;
-        }
-
-        $verify = filter_input(INPUT_GET,'logoff',FILTER_SANITIZE_SPECIAL_CHARS);
-        // $ver= filter_input(INPUT_GET,'log',FILTER_SANITIZE_SPECIAL_CHARS);
-
-        // $Mainverify = filter_input(INPUT_GET,'logoffMain',FILTER_SANITIZE_SPECIAL_CHARS);
-        if ($verify==true ) {
-            session_destroy();
-            header('location: login.php');
-        }
-       
-       
-    
-    
-    }
-
-    function message($stringMessage,$username)
-    {
-        ECHO $stringMessage.$username;
-        
-    }
 ?>
 
 <!DOCTYPE html>
