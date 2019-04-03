@@ -1,0 +1,262 @@
+#mainbody,#createMenuBody{
+    
+    background-color: rgb(41, 19, 19);
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#menubody,#aboutBody,#editMenu{
+    background-color: rgb(41, 19, 19);
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgba(214, 141, 4, 0.801);
+}
+
+header{
+    color: rgba(214, 141, 4, 0.801);
+
+}
+#navbar ul
+{
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+#navbar ul li {
+    background-color: rgb(255, 0, 0,0.6);
+    border-radius:7px;
+    border: 1px solid white;
+    margin-top: 10px;  
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.readmore{
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: rgb(255, 0, 0,0.6);
+  
+}
+.link{
+    color:white;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+@media (min-width:1100px)
+{
+    #mainbody,#createMenuBody,#editMenu{
+    
+      text-align: center;
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #navbar ul li{
+        border: 1px solid white;
+        background-color: red;
+        width: 220px;
+        text-align: center;
+    }
+
+
+    header{
+        color: rgba(214, 141, 4, 0.801);
+        box-shadow: 3px 3px 3px black;
+        background-image: url('images/dinner.jpg');
+        
+
+    }
+
+
+    #headerdiv{
+        margin-left: 110px;
+        width:45%;
+        background-color:rgba(169,169,169, 0.3) ;
+        height: 450px;
+    }
+
+
+    #headerdiv,h1{
+        padding-top: 50px;
+    }
+    #headerdiv  p{
+        font-family: Kunstler Script;
+        font-size: 35px;
+        /* font-weight: bold; */
+        text-shadow: 0.2px 0.2px  white;
+    }
+    .link {
+        color:white;
+        border-radius:7px;
+        list-style: none;
+        text-decoration: none;
+    } 
+
+    .link:link{
+    text-decoration: none;
+    }
+    #middleBody{
+        margin-top: 20px;
+        color: rgba(158, 77, 10, 0.87);
+        text-align: center;
+    }
+    #middleBody p{
+        color: white;
+
+    }
+
+    #middleBody img{
+        width: 50%;
+        height: 50%;
+        margin-top: 50px;
+    }
+    #loginbody{
+        margin-left: 300px;
+        margin-right: 300px;
+        text-align: center;
+    }
+    #menubody{
+        margin-left: 300px;
+        margin-right: 300px;
+        text-align: center;
+    }
+}
+
+
+#middleBody{
+    margin-top: 20px;
+    color: rgba(158, 77, 10, 0.87);
+    text-align: center;
+}
+#display{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgba(158, 77, 10);
+    padding: 0px;
+
+}
+#display div{
+   
+    background-color: white;
+    border-radius: 10px;
+    font-family:Kunstler Script;
+    margin-left: 5px;
+
+}
+#display p{
+    color:rgba(158, 77, 10);
+    text-shadow: 0.2px 0.2px  black; 
+    font-size: 35px;
+}
+#display h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+#loginbody{
+    background-color: rgb(41, 19, 19);
+    color: rgba(214, 141, 4, 0.801);
+    text-align: center;
+}
+form
+{
+    display: block;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+label{
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+}
+input {
+    float: left;
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+}
+#registerlink,#loginlink, #createlink,#editlink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 248px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px white;
+}
+
+#registerlink:active{
+    color: yellow;
+    margin-top: 30px;
+}
+#loginlink:active{
+    color: yellow;
+    margin-top: 30px;
+}
+
+#loginImage{
+    width: 600px;
+    border-image: 500px;
+}
+
+#foodType{
+    display: flex;
+    float: left;
+}
+
+#foodType label {
+    width: 80px;
+}
+
+.errorCreate{
+    color:rgba(158, 77, 10, 0.87);
+}
+.menuitem{
+    
+    display: flex;
+    color: rgba(158, 77, 10, 0.87);
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.description{
+    width: 200px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+}
